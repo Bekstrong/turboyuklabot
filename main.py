@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # .env dan o'qib olinadi
-api_id = os.getenv("26385684")
+api_id = 26385684
 api_hash = os.getenv("4ac1c8db9d6aca1310deff4b51d35657")
 bot_token = os.getenv("8035007175:AAFgKWyDCEz4Cwi1qFE8fTdHzQ9wEI-Agjk")
 

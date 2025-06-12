@@ -8,8 +8,7 @@ load_dotenv()
 
 BOT_TOKEN = os.getenv("8035007175:AAFgKWyDCEz4Cwi1qFE8fTdHzQ9wEI-Agjk")
 API_ID = os.getenv("26385684")
-API_HASH = os.getenv("4ac1c8bd9d6acaa...
-")
+API_HASH = os.getenv("4ac1c8bd9d6acaa")
 
 if BOT_TOKEN is None or API_ID is None or API_HASH is None:
     raise ValueError("BOT_TOKEN, API_ID yoki API_HASH .env fayldan yuklanmadi!")

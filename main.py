@@ -3,9 +3,16 @@ from aiogram import Bot, Dispatcher, types
 from aiogram.utils import executor
 from dotenv import load_dotenv
 
+# .env fayldan ma'lumotlarni yuklash
 load_dotenv()
 
-bot = Bot(token=os.getenv("BOT_TOKEN"))
+# .env dan o'qib olinadi
+api_id = os.getenv("26385684")
+api_hash = os.getenv("4ac1c8db9d6aca1310deff4b51d35657")
+bot_token = os.getenv("8035007175:AAFgKWyDCEz4Cwi1qFE8fTdHzQ9wEI-Agjk")
+
+# Botni ishga tushurish
+bot = Bot(token=bot_token)
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands=["start"])
@@ -19,7 +26,7 @@ async def download_video(message: types.Message):
     from os import remove
 
     url = message.text
-    await message.answer("⬇️ Yuklab olinmoqda...")
+    await message.answer("📥 Yuklab olinmoqda...")
 
     ydl_opts = {
         'format': 'mp4',

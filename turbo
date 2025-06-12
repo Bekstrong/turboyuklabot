@@ -1,11 +1,1 @@
-services:
-  - type: worker
-    name: turboyuklabot
-    runtime: python
-    repo: https://github.com/Bekstrong/turboyuklabot
-    branch: main
-    plan: free
-    startCommand: python main.py
-    envVars:
-      - key: BOT_TOKEN
-        sync: false
+

@@ -30,9 +30,11 @@ async def download_video(message: types.Message):
 
     try:
         ydl_opts = {
-            'outtmpl': 'video.%(ext)s',
-            'format': 'mp4',
-            'quiet': True,
+    'outtmpl': 'video.%(ext)s',
+    'format': 'mp4',
+    'quiet': True,
+    'noplaylist': True,
+    'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
         }
         with yt_dlp.YoutubeDL(ydl_opts) as ydl:
             info = ydl.extract_info(url, download=True)

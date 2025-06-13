@@ -6,9 +6,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-BOT_TOKEN = os.getenv("8035007175:AAFgKWyDCEz4Cwi1qFE8fTdHzQ9wEI-Agjk")
-API_ID = os.getenv("26385684")
-API_HASH = os.getenv("4ac1c8bd9d6acaa")
+BOT_TOKEN = os.getenv("80AFgKWyDCEz4Cwi1qFE8fTdHzQ9wEI-Agjk")
+API_ID = os.getenv("2)
+API_HASH = os.getenv("4ac1")
 
 if not all([BOT_TOKEN, API_ID, API_HASH]):
     raise ValueError("BOT_TOKEN, API_ID yoki API_HASH belgilanmagan.")

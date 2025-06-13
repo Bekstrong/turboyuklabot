@@ -10,9 +10,7 @@ BOT_TOKEN = os.getenv("8035007175:AAFgKWyDCEz4Cwi1qFE8fTdHzQ9wEI-Agjk")
 API_ID = os.getenv("26385684")
 API_HASH = os.getenv("4ac1c8bd9d6acaa")
 
-if not all([BOT_TOKEN, API_ID, API_HASH]):
-    raise ValueError("❗️ BOT_TOKEN, API_ID yoki API_HASH .env fayldan yuklanmadi!")
-
+if not all
 bot = Bot(token=BOT_TOKEN)
 dp = Dispatcher(bot)
 
